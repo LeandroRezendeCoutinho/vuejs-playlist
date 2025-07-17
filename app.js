@@ -4,10 +4,11 @@ new Vue({
         name: 'Leandro',
         job: 'Web Developer',
         website: 'https://google.com',
-        websiteTag: '<a href="https://google.com">Google</a>'
+        websiteTag: '<a href="https://google.com">Google</a>',
+        age: 25,
     },
     methods: {
-        greet: function(time) {
+        greet: function (time) {
             return `Good ${time}, ${this.name}!`;
         }
     }
