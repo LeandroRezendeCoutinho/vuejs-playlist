@@ -47,6 +47,15 @@
             <input type="text" v-model="name" placeholder="Enter your name">
             <input type="text" v-model="job" placeholder="Enter your job">
         </section>
+        <section>
+            <h3>Computed Properties</h3>
+            <button v-on:click="computed.a++">Add to A</button>
+            <button v-on:click="computed.b++">Add to B</button>
+            <p>A: {{ computed.a }}</p>
+            <p>B: {{ computed.b }}</p>
+            <p>Age + A = {{ addToA() }}</p>
+            <p>Age + B = {{ addToB() }}</p>
+        </section>
     </div>
     <script src="app.js"></script>
 </body>

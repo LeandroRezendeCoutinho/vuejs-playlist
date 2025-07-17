@@ -9,6 +9,10 @@ new Vue({
         canvas: {
             x: 0,
             y: 0
+        },
+        computed: {
+            a: 0,
+            b: 0
         }
     },
     methods: {
@@ -32,5 +36,14 @@ new Vue({
             console.log('You entered your name: ' + event.target.value);
             this.name = event.target.value;
         },
+        addToA: function () {
+            console.log('You clicked on A');
+
+            return this.computed.a + this.age;
+        },
+        addToB: function () {
+            console.log('You clicked on B');
+            return this.computed.b + this.age;
+        }
     }
 });
