@@ -36,6 +36,8 @@ new Vue({
             console.log('You entered your name: ' + event.target.value);
             this.name = event.target.value;
         },
+    },
+    computed: {
         addToA: function () {
             console.log('You clicked on A');
 
