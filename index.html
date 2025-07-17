@@ -38,6 +38,10 @@
             <h3>Prevent</h3>
             <a href="https://google.com" v-on:click.prevent="preventAlert">Click me</a>
         </section>
+        <section>
+            <h3>Keyboard events</h3>
+            <input type="text" v-on:keyup.enter="logName">
+        </section>
     </div>
     <script src="app.js"></script>
 </body>

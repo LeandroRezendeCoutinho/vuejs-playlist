@@ -27,6 +27,9 @@ new Vue({
         },
         preventAlert: function (event) {
             alert('You can\'t get out!');
-        }
+        },
+        logName: function (event) {
+            console.log('You entered your name: ' + event.target.value);
+        },
     }
 });
