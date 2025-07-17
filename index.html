@@ -23,6 +23,12 @@
             <input type="text" v-bind:value="name" placeholder="Enter your name">
             <p v-html="websiteTag"></p>
         </section>
+        <section>
+            <h3>Events</h3>
+            <button v-on:click="age++">Add a year</button>
+            <button v-on:click="age--">Remove a year</button>
+            <p>{{ name }} is {{ age }} years old.</p>
+        </section>
     </div>
     <script src="app.js"></script>
 </body>
