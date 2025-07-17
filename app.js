@@ -30,6 +30,7 @@ new Vue({
         },
         logName: function (event) {
             console.log('You entered your name: ' + event.target.value);
+            this.name = event.target.value;
         },
     }
 });

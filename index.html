@@ -42,6 +42,11 @@
             <h3>Keyboard events</h3>
             <input type="text" v-on:keyup.enter="logName">
         </section>
+        <section>
+            <h3>Two-way data binding</h3>
+            <input type="text" v-model="name" placeholder="Enter your name">
+            <input type="text" v-model="job" placeholder="Enter your job">
+        </section>
     </div>
     <script src="app.js"></script>
 </body>
