@@ -25,5 +25,8 @@ new Vue({
             this.canvas.x = event.offsetX;
             this.canvas.y = event.offsetY;
         },
+        preventAlert: function (event) {
+            alert('You can\'t get out!');
+        }
     }
 });
