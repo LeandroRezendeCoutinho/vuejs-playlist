@@ -68,6 +68,15 @@
                 <span>Available</span>
             </div>
         </section>
+        <section>Conditionals
+            <h3>Conditionals</h3>
+            <button v-on:click="conditional.error = !conditional.error">Toggle Error</button>
+            <button v-on:click="conditional.success = !conditional.success">Toggle Success</button>
+            <p v-if="conditional.error">There was an error</p> <!-- Remove o componente do DOM -->
+            <p v-else-if="conditional.success">There was a success</p> <!-- Só vai exibir se a primeira for falsa -->
+            <p v-show="conditional.error">There was an error</p> <!-- Usa display none para esconder -->
+            <p v-show="conditional.success">There was a success</p>
+        </section>
     </div>
     <script src="app.js"></script>
 </body>
