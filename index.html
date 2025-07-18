@@ -61,6 +61,12 @@
             <div v-bind:class="{available: available}" v-on:click="available = !available">
                 <span>Available</span>
             </div>
+            <h3>Computed Classes</h3>
+            <button v-on:click="nearby = !nearby">Toggle Nearby</button>
+            <button v-on:click="available = !available">Toggle Available</button>
+            <div v-bind:class="compClasses">
+                <span>Available</span>
+            </div>
         </section>
     </div>
     <script src="app.js"></script>

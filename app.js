@@ -14,7 +14,8 @@ new Vue({
             a: 0,
             b: 0
         },
-        available: true
+        available: false,
+        nearby: false
     },
     methods: {
         greet: function (time) {
@@ -47,6 +48,12 @@ new Vue({
         addToB: function () {
             console.log('You clicked on B');
             return this.computed.b + this.age;
+        },
+        compClasses: function () {
+            return {
+                available: this.available,
+                nearby: this.nearby
+            }
         }
     }
 });
