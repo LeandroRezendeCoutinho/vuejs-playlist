@@ -56,6 +56,12 @@
             <p>Age + A = {{ addToA }}</p>
             <p>Age + B = {{ addToB }}</p>
         </section>
+        <section>
+            <h3>Dynamic CSS</h3>
+            <div v-bind:class="{available: available}" v-on:click="available = !available">
+                <span>Available</span>
+            </div>
+        </section>
     </div>
     <script src="app.js"></script>
 </body>

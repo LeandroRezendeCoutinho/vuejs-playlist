@@ -13,7 +13,8 @@ new Vue({
         computed: {
             a: 0,
             b: 0
-        }
+        },
+        available: true
     },
     methods: {
         greet: function (time) {
