@@ -1,1 +1,1 @@
-A very simples vuejs app
+Very simples vuejs apps
