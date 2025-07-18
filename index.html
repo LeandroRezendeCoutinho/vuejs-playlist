@@ -77,6 +77,16 @@
             <p v-show="conditional.error">There was an error</p> <!-- Usa display none para esconder -->
             <p v-show="conditional.success">There was a success</p>
         </section>
+        <section>
+            <h3>List Rendering</h3>
+            <ul>
+                <li v-for="ninja in ninjas" v-on:click="ninja.show = !ninja.show">
+                    <h4>{{ ninja.name }}</h4>
+                    <h5 v-show="ninja.show">{{ ninja.speciality }}</h5>
+                </li>
+            </ul>
+        </section>
+
     </div>
     <script src="app.js"></script>
 </body>
